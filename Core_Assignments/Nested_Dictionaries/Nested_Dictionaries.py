@@ -51,21 +51,19 @@ dojo = {
 }
 
 
-# def printInfo(dojo):
-#     print(len(dojo['locations']))
-#     for location in dojo['locations']:
-#         print(location)
-#     print()
-#     print(len(dojo['instructors']), "INSTRUCTORS")
-#     for instructor in dojo['instructors']:
-#         print(instructor)
+
+# Create a function printInfo(some_dict) that given a dictionary whose values are all lists, prints the name of each key along with the size of its list, and then prints the associated values within each key's list. For example:
 
 
-def printInfo(dojo):
+def function4(some_dict):
 
+    for key in some_dict:
+        print(key, len(some_dict[key]))
 
-    printInfo(len(dojo['locations']))
-    for val in dojo['locations']:
-        print(val)
+        for item in some_dict[key]:
+            print(item)
 
-printInfo(dojo) 
+# print(some_dict['locations'])
+
+function4(dojo)
+
